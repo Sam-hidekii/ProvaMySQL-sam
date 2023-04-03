@@ -38,8 +38,8 @@ $resultado = $conexao->query($sql);
   </header>
   <br>
   <main>
-
-    <h2>Livros disponíveis</h2><br><br>
+<article>
+  <h1>Livros disponíveis</h1>
 
     <?php if ($resultado->num_rows > 0) { ?>
 
@@ -73,8 +73,9 @@ $resultado = $conexao->query($sql);
 
       </tbody>
     </table>
-
+   
     <?php } else { ?>
+      </artiicle>
 
   <p>Não há livros disponíveis.</p>
 
@@ -83,6 +84,7 @@ $resultado = $conexao->query($sql);
   <p><a href="novo_livro.php">Cadastrar novo livro</a></p>
   <p><a href="lista_usuarios.php">Ver usuários cadastrados</a></p>
   <p><a href="novo_usuario.php">Cadastrar novo usuário</a></p>
+   
   </main>
 
 <footer>
